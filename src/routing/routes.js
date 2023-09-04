@@ -9,5 +9,9 @@ export const routes = [
   { path: "/skills", element: <Skills /> },
   { path: "/education", element: <Education /> },
   { path: "/experience", element: <Experience /> },
+  { path: "/portfolio", element: <Home /> },
+  { path: "/portfolio/skills", element: <Skills /> },
+  { path: "/portfolio/education", element: <Education /> },
+  { path: "/portfolio/experience", element: <Experience /> },
   { path: "*", element: <Navigate to="/" /> },
 ];

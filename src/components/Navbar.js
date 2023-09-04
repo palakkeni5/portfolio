@@ -47,19 +47,19 @@ const Navbar = (props) => {
     console.log(navMenu);
     setAnchorElNav(null);
     if (navMenu === "HOME") {
-      navigate("/");
+      navigate("/portfolio");
     } else if (navMenu === "SKILLS") {
-      navigate("/skills");
+      navigate("/portfolio/skills");
     } else if (navMenu === "EDUCATION") {
-      navigate("/education");
+      navigate("/portfolio/education");
     } else if (navMenu === "EXPERIENCE") {
-      navigate("/experience");
+      navigate("/portfolio/experience");
     } else if (navMenu === "PROJECTS") {
-      navigate("/");
+      navigate("/portfolio");
     } else if (navMenu === "RESUME") {
       window.open(resumeLink, "_blank");
     } else {
-      navigate("/");
+      navigate("/portfolio");
     }
   };
 
