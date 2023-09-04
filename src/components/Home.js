@@ -53,7 +53,7 @@ const Home = () => {
               />
             </Typography>
           </Grid>
-          <Grid item xs={1} sx={{ mt: 10 }}>
+          <Grid item xs={1} sx={{ mt: 10, mb: 10 }}>
             <Tooltip title="https://www.linkedin.com/in/palak-keni/">
               <IconButton
                 sx={{ mr: 3, ml: 3 }}

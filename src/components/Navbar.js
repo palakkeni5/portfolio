@@ -14,6 +14,8 @@ import MenuItem from "@mui/material/MenuItem";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useNavigate } from "react-router-dom";
 
+import personalPhoto from "../assets/images/photo-1.jpg";
+
 const pages = [
   "HOME",
   "SKILLS",
@@ -68,14 +70,14 @@ const Navbar = (props) => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <IconButton sx={{ p: 0, display: { xs: "none", md: "flex" }, mr: 1 }}>
-            <Avatar alt="Palak Pramod Keni" src="/static/images/avatar/2.jpg" />
+            <Avatar alt="Palak Pramod Keni" src={personalPhoto} />
           </IconButton>
           <Typography
             variant="h6"
             noWrap
-            component="a"
             href="/"
             sx={{
+              ml: 2,
               mr: 2,
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
@@ -133,6 +135,7 @@ const Navbar = (props) => {
             component="a"
             href="/"
             sx={{
+              ml: 2,
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
