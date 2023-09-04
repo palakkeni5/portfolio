@@ -21,24 +21,27 @@ const Skills = () => {
           alignItems="center"
         >
           <Grid item xs={1} sx={{ mt: 5, ml: 5, mr: 5 }}>
-            <Typography variant="h6" gutterBottom textAlign={"center"}>
+            <Typography variant="body1" gutterBottom textAlign={"center"}>
               I love to learn new things and experiment with new technologies.
             </Typography>
           </Grid>
           <Grid item xs={1} sx={{ ml: 5, mr: 5 }}>
-            <Typography variant="h6" gutterBottom textAlign={"center"}>
+            <Typography variant="body1" gutterBottom textAlign={"center"}>
               These are some of the major languages, technologies, tools and
               platforms I have worked with:
             </Typography>
           </Grid>
           <Divider />
           <Grid item xs={1} sx={{ mt: 2, ml: 5, mr: 5 }}>
-            <Typography variant="h3" gutterBottom textAlign={"center"}>
+            <Typography variant="h4" gutterBottom textAlign={"center"}>
               Languages
             </Typography>
           </Grid>
           <Grid item xs={1} sx={{ ml: 5, mr: 5 }}>
-            <Stack direction="row" spacing={5}>
+            <Stack
+              direction={{ xs: "column", sm: "row" }}
+              spacing={{ xs: 1, sm: 2, md: 4 }}
+            >
               {data.languages.map((language) => (
                 <>
                   <Grid
@@ -53,7 +56,11 @@ const Skills = () => {
                       variant="square"
                       sx={{ width: 56, height: 56 }}
                     />
-                    <Typography variant="h6" gutterBottom textAlign={"center"}>
+                    <Typography
+                      variant="button"
+                      gutterBottom
+                      textAlign={"center"}
+                    >
                       {language.name}
                     </Typography>
                   </Grid>
@@ -63,12 +70,15 @@ const Skills = () => {
           </Grid>
           <Divider />
           <Grid item xs={1} sx={{ mt: 2, ml: 5, mr: 5 }}>
-            <Typography variant="h3" gutterBottom textAlign={"center"}>
+            <Typography variant="h4" gutterBottom textAlign={"center"}>
               Frameworks
             </Typography>
           </Grid>
           <Grid item xs={1} sx={{ ml: 5, mr: 5 }}>
-            <Stack direction="row" spacing={5}>
+            <Stack
+              direction={{ xs: "column", sm: "row" }}
+              spacing={{ xs: 1, sm: 2, md: 4 }}
+            >
               {data.frameworks.map((framework) => (
                 <>
                   <Grid
@@ -83,7 +93,11 @@ const Skills = () => {
                       variant="square"
                       sx={{ width: 56, height: 56 }}
                     />
-                    <Typography variant="h6" gutterBottom textAlign={"center"}>
+                    <Typography
+                      variant="button"
+                      gutterBottom
+                      textAlign={"center"}
+                    >
                       {framework.name}
                     </Typography>
                   </Grid>
@@ -93,12 +107,15 @@ const Skills = () => {
           </Grid>
           <Divider />
           <Grid item xs={1} sx={{ mt: 2, ml: 5, mr: 5 }}>
-            <Typography variant="h3" gutterBottom textAlign={"center"}>
+            <Typography variant="h4" gutterBottom textAlign={"center"}>
               Web Technologies
             </Typography>
           </Grid>
           <Grid item xs={1} sx={{ ml: 5, mr: 5 }}>
-            <Stack direction="row" spacing={5}>
+            <Stack
+              direction={{ xs: "column", sm: "row" }}
+              spacing={{ xs: 1, sm: 2, md: 4 }}
+            >
               {data.webTechnologies.map((webTechnology) => (
                 <>
                   <Grid
@@ -113,7 +130,11 @@ const Skills = () => {
                       variant="square"
                       sx={{ width: 56, height: 56 }}
                     />
-                    <Typography variant="h6" gutterBottom textAlign={"center"}>
+                    <Typography
+                      variant="button"
+                      gutterBottom
+                      textAlign={"center"}
+                    >
                       {webTechnology.name}
                     </Typography>
                   </Grid>
@@ -123,12 +144,15 @@ const Skills = () => {
           </Grid>
           <Divider />
           <Grid item xs={1} sx={{ mt: 2, ml: 5, mr: 5 }}>
-            <Typography variant="h3" gutterBottom textAlign={"center"}>
+            <Typography variant="h4" gutterBottom textAlign={"center"}>
               Database Technologies
             </Typography>
           </Grid>
           <Grid item xs={1} sx={{ ml: 5, mr: 5 }}>
-            <Stack direction="row" spacing={5}>
+            <Stack
+              direction={{ xs: "column", sm: "row" }}
+              spacing={{ xs: 1, sm: 2, md: 4 }}
+            >
               {data.databaseTechnologies.map((databaseTechnology) => (
                 <>
                   <Grid
@@ -143,7 +167,11 @@ const Skills = () => {
                       variant="square"
                       sx={{ width: 56, height: 56 }}
                     />
-                    <Typography variant="h6" gutterBottom textAlign={"center"}>
+                    <Typography
+                      variant="button"
+                      gutterBottom
+                      textAlign={"center"}
+                    >
                       {databaseTechnology.name}
                     </Typography>
                   </Grid>
@@ -153,12 +181,15 @@ const Skills = () => {
           </Grid>
           <Divider />
           <Grid item xs={1} sx={{ mt: 2, ml: 5, mr: 5 }}>
-            <Typography variant="h3" gutterBottom textAlign={"center"}>
+            <Typography variant="h4" gutterBottom textAlign={"center"}>
               Tools
             </Typography>
           </Grid>
-          <Grid item xs={1} sx={{ ml: 5, mr: 5 }}>
-            <Stack direction="row" spacing={5}>
+          <Grid item xs={1} sx={{ ml: 5, mr: 5, mb: 5 }}>
+            <Stack
+              direction={{ xs: "column", sm: "row" }}
+              spacing={{ xs: 1, sm: 2, md: 4 }}
+            >
               {data.tools.map((tool) => (
                 <>
                   <Grid
@@ -173,7 +204,11 @@ const Skills = () => {
                       variant="square"
                       sx={{ width: 56, height: 56 }}
                     />
-                    <Typography variant="h6" gutterBottom textAlign={"center"}>
+                    <Typography
+                      variant="button"
+                      gutterBottom
+                      textAlign={"center"}
+                    >
                       {tool.name}
                     </Typography>
                   </Grid>
