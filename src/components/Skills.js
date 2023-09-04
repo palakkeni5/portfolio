@@ -1,0 +1,193 @@
+import React, { useState, useEffect, Suspense } from "react";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
+import Avatar from "@mui/material/Avatar";
+import Stack from "@mui/material/Stack";
+import Divider from "@mui/material/Divider";
+
+import { data } from "./skillsData";
+
+const Skills = () => {
+  return (
+    <>
+      <Box sx={{ width: "100%" }}>
+        <Grid
+          container
+          direction="column"
+          justifyContent="space-between"
+          alignItems="center"
+        >
+          <Grid item xs={1} sx={{ mt: 5, ml: 5, mr: 5 }}>
+            <Typography variant="h6" gutterBottom textAlign={"center"}>
+              I love to learn new things and experiment with new technologies.
+            </Typography>
+          </Grid>
+          <Grid item xs={1} sx={{ ml: 5, mr: 5 }}>
+            <Typography variant="h6" gutterBottom textAlign={"center"}>
+              These are some of the major languages, technologies, tools and
+              platforms I have worked with:
+            </Typography>
+          </Grid>
+          <Divider />
+          <Grid item xs={1} sx={{ mt: 2, ml: 5, mr: 5 }}>
+            <Typography variant="h3" gutterBottom textAlign={"center"}>
+              Languages
+            </Typography>
+          </Grid>
+          <Grid item xs={1} sx={{ ml: 5, mr: 5 }}>
+            <Stack direction="row" spacing={5}>
+              {data.languages.map((language) => (
+                <>
+                  <Grid
+                    container
+                    direction="column"
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Avatar
+                      alt={language.name}
+                      src={language.logo}
+                      variant="square"
+                      sx={{ width: 56, height: 56 }}
+                    />
+                    <Typography variant="h6" gutterBottom textAlign={"center"}>
+                      {language.name}
+                    </Typography>
+                  </Grid>
+                </>
+              ))}
+            </Stack>
+          </Grid>
+          <Divider />
+          <Grid item xs={1} sx={{ mt: 2, ml: 5, mr: 5 }}>
+            <Typography variant="h3" gutterBottom textAlign={"center"}>
+              Frameworks
+            </Typography>
+          </Grid>
+          <Grid item xs={1} sx={{ ml: 5, mr: 5 }}>
+            <Stack direction="row" spacing={5}>
+              {data.frameworks.map((framework) => (
+                <>
+                  <Grid
+                    container
+                    direction="column"
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Avatar
+                      alt={framework.name}
+                      src={framework.logo}
+                      variant="square"
+                      sx={{ width: 56, height: 56 }}
+                    />
+                    <Typography variant="h6" gutterBottom textAlign={"center"}>
+                      {framework.name}
+                    </Typography>
+                  </Grid>
+                </>
+              ))}
+            </Stack>
+          </Grid>
+          <Divider />
+          <Grid item xs={1} sx={{ mt: 2, ml: 5, mr: 5 }}>
+            <Typography variant="h3" gutterBottom textAlign={"center"}>
+              Web Technologies
+            </Typography>
+          </Grid>
+          <Grid item xs={1} sx={{ ml: 5, mr: 5 }}>
+            <Stack direction="row" spacing={5}>
+              {data.webTechnologies.map((webTechnology) => (
+                <>
+                  <Grid
+                    container
+                    direction="column"
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Avatar
+                      alt={webTechnology.name}
+                      src={webTechnology.logo}
+                      variant="square"
+                      sx={{ width: 56, height: 56 }}
+                    />
+                    <Typography variant="h6" gutterBottom textAlign={"center"}>
+                      {webTechnology.name}
+                    </Typography>
+                  </Grid>
+                </>
+              ))}
+            </Stack>
+          </Grid>
+          <Divider />
+          <Grid item xs={1} sx={{ mt: 2, ml: 5, mr: 5 }}>
+            <Typography variant="h3" gutterBottom textAlign={"center"}>
+              Database Technologies
+            </Typography>
+          </Grid>
+          <Grid item xs={1} sx={{ ml: 5, mr: 5 }}>
+            <Stack direction="row" spacing={5}>
+              {data.databaseTechnologies.map((databaseTechnology) => (
+                <>
+                  <Grid
+                    container
+                    direction="column"
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Avatar
+                      alt={databaseTechnology.name}
+                      src={databaseTechnology.logo}
+                      variant="square"
+                      sx={{ width: 56, height: 56 }}
+                    />
+                    <Typography variant="h6" gutterBottom textAlign={"center"}>
+                      {databaseTechnology.name}
+                    </Typography>
+                  </Grid>
+                </>
+              ))}
+            </Stack>
+          </Grid>
+          <Divider />
+          <Grid item xs={1} sx={{ mt: 2, ml: 5, mr: 5 }}>
+            <Typography variant="h3" gutterBottom textAlign={"center"}>
+              Tools
+            </Typography>
+          </Grid>
+          <Grid item xs={1} sx={{ ml: 5, mr: 5 }}>
+            <Stack direction="row" spacing={5}>
+              {data.tools.map((tool) => (
+                <>
+                  <Grid
+                    container
+                    direction="column"
+                    justifyContent="space-between"
+                    alignItems="center"
+                  >
+                    <Avatar
+                      alt={tool.name}
+                      src={tool.logo}
+                      variant="square"
+                      sx={{ width: 56, height: 56 }}
+                    />
+                    <Typography variant="h6" gutterBottom textAlign={"center"}>
+                      {tool.name}
+                    </Typography>
+                  </Grid>
+                </>
+              ))}
+            </Stack>
+          </Grid>
+        </Grid>
+      </Box>
+
+      {/*
+       */}
+    </>
+  );
+};
+
+export default Skills;
