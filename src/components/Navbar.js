@@ -30,12 +30,14 @@ const resumeLink =
 const Navbar = (props) => {
   const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [isDarkMode, setDarkMode] = React.useState(true);
+  const [isDarkMode, setIsDarkMode] = React.useState(false);
 
   const toggleDarkMode = () => {
-    let prevIsDarkMode = isDarkMode;
-    setDarkMode(!prevIsDarkMode);
-    props.setThemeCallBack(!prevIsDarkMode);
+    let newMode = !isDarkMode;
+
+    setIsDarkMode(newMode);
+    window.sessionStorage.setItem("isDarkMode", newMode);
+    props.setThemeCallBack(newMode);
   };
 
   const handleOpenNavMenu = (event) => {
@@ -64,6 +66,21 @@ const Navbar = (props) => {
       navigate("/portfolio");
     }
   };
+
+  React.useEffect(() => {
+    try {
+      var localMode = window.sessionStorage.getItem("isDarkMode");
+      if (localMode == null) {
+        localMode = false;
+      }
+      if (JSON.parse(localMode)) {
+        setIsDarkMode(true);
+        props.setThemeCallBack(true);
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  }, []);
 
   return (
     <AppBar position="fixed">
@@ -164,7 +181,7 @@ const Navbar = (props) => {
             <Box sx={{ flexGrow: 0 }}>
               <DarkModeSwitch
                 style={{ margin: "1rem" }}
-                checked={isDarkMode}
+                checked={!isDarkMode}
                 onChange={toggleDarkMode}
                 size={50}
               />

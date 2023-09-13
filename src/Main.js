@@ -22,14 +22,13 @@ const Main = () => {
   const [reactTheme, setReactTheme] = useState(lightTheme);
 
   const handleThemeSetupCallback = (themeValue) => {
-    if (themeValue) {
-      setReactTheme(lightTheme);
-    } else {
+    console.log("in themeValue" + themeValue);
+    if (JSON.parse(themeValue)) {
       setReactTheme(darkTheme);
+    } else {
+      setReactTheme(lightTheme);
     }
   };
-
-  useEffect(() => {}, []);
 
   return (
     <>

@@ -36,7 +36,7 @@ export const data = {
       projectImage: brickBreakerImage,
       projectName: "Brick Breaker Game",
       projectDescription: "A simple brick breaker game developed in java",
-      projectTech: ["React", "Javascript", "HTML", "CSS"],
+      projectTech: ["Java"],
       projectLink: "https://github.com/palakkeni5/brick-breaker-game-in-java",
     },
   ],
