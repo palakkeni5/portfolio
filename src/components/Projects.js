@@ -18,7 +18,7 @@ const Projects = () => {
         justifyContent="space-evenly"
         alignItems="center"
         sx={{ p: 2 }}
-        marginTop={10}
+        marginTop={12}
       >
         <Typography variant="h3" gutterBottom>
           Projects
