@@ -59,6 +59,7 @@ const Experience = () => {
         direction="column"
         justifyContent="space-between"
         alignItems="center"
+        marginTop={10}
       >
         <Grid item sx={{ m: 5 }}>
           <Typography variant="h3" gutterBottom>
@@ -66,7 +67,7 @@ const Experience = () => {
           </Typography>
         </Grid>
       </Grid>
-      <Timeline position="alternate">
+      <Timeline position="alternate" sx={{ mb: 10 }}>
         {items.map((item) => (
           <TimelineItem>
             <TimelineOppositeContent

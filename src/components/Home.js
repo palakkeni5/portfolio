@@ -30,6 +30,7 @@ const Home = () => {
           direction="column"
           justifyContent="space-between"
           alignItems="center"
+          marginTop={10}
         >
           <Grid item xs={6} sx={{ mt: 5, ml: 5, mr: 5 }}>
             <Typography variant="h1" gutterBottom>

@@ -57,7 +57,7 @@ const Navbar = (props) => {
     } else if (navMenu === "EXPERIENCE") {
       navigate("/portfolio/experience");
     } else if (navMenu === "PROJECTS") {
-      navigate("/portfolio");
+      navigate("/portfolio/projects");
     } else if (navMenu === "RESUME") {
       window.open(resumeLink, "_blank");
     } else {
@@ -66,7 +66,7 @@ const Navbar = (props) => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <IconButton sx={{ p: 0, display: { xs: "none", md: "flex" }, mr: 1 }}>

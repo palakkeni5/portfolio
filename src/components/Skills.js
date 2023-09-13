@@ -19,6 +19,7 @@ const Skills = () => {
           direction="column"
           justifyContent="space-between"
           alignItems="center"
+          marginTop={10}
         >
           <Grid item xs={1} sx={{ mt: 5, ml: 5, mr: 5 }}>
             <Typography variant="body1" gutterBottom textAlign={"center"}>

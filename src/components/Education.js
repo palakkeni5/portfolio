@@ -37,6 +37,7 @@ const Education = () => {
         direction="column"
         justifyContent="space-between"
         alignItems="center"
+        marginTop={10}
       >
         <Grid item sx={{ m: 5 }}>
           <Typography variant="h3" gutterBottom>
