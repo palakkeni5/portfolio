@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.89a9455c.css",
-    "main.js": "/portfolio/static/js/main.774a4223.js",
+    "main.js": "/portfolio/static/js/main.e604ee76.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/pokedex-app.png": "/portfolio/static/media/pokedex-app.cc4f339bd07e3c20fcc5.png",
     "static/media/photo-1.jpg": "/portfolio/static/media/photo-1.b6ca1160e798cd4331ad.jpg",
@@ -80,11 +80,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/portfolio/index.html",
     "main.89a9455c.css.map": "/portfolio/static/css/main.89a9455c.css.map",
-    "main.774a4223.js.map": "/portfolio/static/js/main.774a4223.js.map",
+    "main.e604ee76.js.map": "/portfolio/static/js/main.e604ee76.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89a9455c.css",
-    "static/js/main.774a4223.js"
+    "static/js/main.e604ee76.js"
   ]
 }
