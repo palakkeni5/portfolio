@@ -18,7 +18,7 @@ const items = [
     degree: "Masters of Science",
     major: " Computer Engineering",
     university: "New York University, \n New York, USA",
-    gpa: "GPA : 3.61 / 4.00",
+    gpa: "GPA : 3.74 / 4.00",
   },
   {
     year: "Aug 2016 - May 2020",
