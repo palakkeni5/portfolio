@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.89a9455c.css",
-    "main.js": "/portfolio/static/js/main.662a2613.js",
+    "main.js": "/portfolio/static/js/main.95ee0271.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/pokedex-app.png": "/portfolio/static/media/pokedex-app.cc4f339bd07e3c20fcc5.png",
+    "static/media/awesome-super-store.png": "/portfolio/static/media/awesome-super-store.23b786f4af14535a6919.png",
     "static/media/photo-1.jpg": "/portfolio/static/media/photo-1.b6ca1160e798cd4331ad.jpg",
     "static/media/bootstrap.png": "/portfolio/static/media/bootstrap.a4c13c10e026b63748c0.png",
     "static/media/css.png": "/portfolio/static/media/css.19c8605d6b2861f5fbe0.png",
     "static/media/jupyter.png": "/portfolio/static/media/jupyter.e0e612fd290b62ecd44a.png",
     "static/media/hibernate.png": "/portfolio/static/media/hibernate.4971cd295263c933e645.png",
     "static/media/screen-capture-mp4.gif": "/portfolio/static/media/screen-capture-mp4.4af00d77f02bf6257911.gif",
+    "static/media/one-room-chat-app.png": "/portfolio/static/media/one-room-chat-app.5fa6a9c5f218f8e124d8.png",
     "static/media/weather-app.png": "/portfolio/static/media/weather-app.1a24b3dac8444bf682b1.png",
     "static/media/oracleSql.png": "/portfolio/static/media/oracleSql.bbea1761094d4dd0776b.png",
     "static/media/flask.png": "/portfolio/static/media/flask.1bcff0d542f7fc985cb4.png",
@@ -80,11 +82,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/portfolio/index.html",
     "main.89a9455c.css.map": "/portfolio/static/css/main.89a9455c.css.map",
-    "main.662a2613.js.map": "/portfolio/static/js/main.662a2613.js.map",
+    "main.95ee0271.js.map": "/portfolio/static/js/main.95ee0271.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89a9455c.css",
-    "static/js/main.662a2613.js"
+    "static/js/main.95ee0271.js"
   ]
 }
