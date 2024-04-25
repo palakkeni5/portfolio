@@ -5,3 +5,16 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+section {
+  padding: 2.5vw 3.5vw 12vh 3.5vw;
+  /* height: 100vh; */
+}
+
+a{
+  text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}

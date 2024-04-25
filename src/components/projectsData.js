@@ -1,7 +1,6 @@
 import weatherAppImage from "../assets/project-images/weather-app.png";
 import pokedexAppImage from "../assets/project-images/pokedex-app.png";
 import portfolioImage from "../assets/project-images/screen-capture-mp4.gif";
-import brickBreakerImage from "../assets/project-images/brick-breaker.png";
 import oneRoomChatAppImage from "../assets/project-images/one-room-chat-app.png";
 import awesomeSuperstoreAppImage from "../assets/project-images/awesome-super-store.png";
 

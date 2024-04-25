@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useContext } from "react";
-import Stack from "@mui/material/Stack";
-import { Grid, ListItem } from "@mui/material";
+import React from "react";
+import { Grid } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -18,10 +17,10 @@ const Projects = () => {
         justifyContent="space-evenly"
         alignItems="center"
         sx={{ p: 2 }}
-        marginTop={12}
+        marginTop={7}
       >
         <Typography variant="h3" gutterBottom>
-          Projects
+          Personal Projects
         </Typography>
       </Grid>
       <Grid
@@ -32,7 +31,7 @@ const Projects = () => {
         sx={{ p: 2 }}
       >
         {data.projects.map((project) => (
-          <Card sx={{ maxWidth: 370, minWidth: 370, m: 2 }}>
+          <Card sx={{ maxWidth: 370, minWidth: 370, m: 2 }} raised>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -48,7 +47,7 @@ const Projects = () => {
                 </Typography>
 
                 {project.projectTech.map((tech) => (
-                  <Chip label={tech} sx={{ m: 1 }} />
+                  <Chip label={tech} sx={{ m: 1 }} color="primary" />
                 ))}
               </CardContent>
             </CardActionArea>

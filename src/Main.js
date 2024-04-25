@@ -2,9 +2,8 @@ import React, { useState, useEffect, Suspense } from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Navbar from "./components/Navbar";
-import { routes } from "./routing/routes";
-import { Route, Routes, Link } from "react-router-dom";
-import Home from "./components/Home";
+// import Home from "./components/Home";
+import Portfolio from "./components/Portfolio";
 
 const darkTheme = createTheme({
   palette: {
@@ -35,11 +34,12 @@ const Main = () => {
       <ThemeProvider theme={reactTheme}>
         <CssBaseline />
         <Navbar setThemeCallBack={handleThemeSetupCallback} />
-        <Routes>
+        {/* <Routes>
           {routes.map((route) => (
             <Route path={route.path} element={route.element}></Route>
           ))}
-        </Routes>
+        </Routes> */}
+        <Portfolio />
       </ThemeProvider>
     </>
   );

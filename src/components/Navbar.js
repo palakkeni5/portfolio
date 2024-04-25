@@ -12,23 +12,20 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
-import { useNavigate } from "react-router-dom";
-
 import personalPhoto from "../assets/images/photo-1.jpg";
+import { HashLink } from "react-router-hash-link";
 
 const pages = [
-  "HOME",
-  "SKILLS",
-  "EDUCATION",
-  "EXPERIENCE",
-  "PROJECTS",
-  "RESUME",
+  { name: "HOME", link: "#section-home" },
+  { name: "SKILLS", link: "#section-skills" },
+  { name: "EDUCATION", link: "#section-education" },
+  { name: "EXPERIENCE", link: "#section-experience" },
+  { name: "PROJECTS", link: "#section-projects" },
 ];
 const resumeLink =
   "https://docs.google.com/document/d/1S2XgfLiGQAn-Qmim3Llk0yi8TJLcDoZ0/edit?usp=sharing&ouid=112109212249568874081&rtpof=true&sd=true";
 
 const Navbar = (props) => {
-  const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [isDarkMode, setIsDarkMode] = React.useState(false);
 
@@ -46,25 +43,6 @@ const Navbar = (props) => {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-  const handleNavMenuClick = (e, navMenu) => {
-    console.log(navMenu);
-    setAnchorElNav(null);
-    if (navMenu === "HOME") {
-      navigate("/portfolio");
-    } else if (navMenu === "SKILLS") {
-      navigate("/portfolio/skills");
-    } else if (navMenu === "EDUCATION") {
-      navigate("/portfolio/education");
-    } else if (navMenu === "EXPERIENCE") {
-      navigate("/portfolio/experience");
-    } else if (navMenu === "PROJECTS") {
-      navigate("/portfolio/projects");
-    } else if (navMenu === "RESUME") {
-      window.open(resumeLink, "_blank");
-    } else {
-      navigate("/portfolio");
-    }
   };
 
   React.useEffect(() => {
@@ -137,13 +115,13 @@ const Navbar = (props) => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem
-                  key={page}
-                  onClick={(e) => handleNavMenuClick(e, page)}
-                >
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name}>
+                  <HashLink to={page.link}>{page.name}</HashLink>
                 </MenuItem>
               ))}
+              <MenuItem onClick={() => window.open(resumeLink, "_blank")}>
+                RESUME
+              </MenuItem>
             </Menu>
           </Box>
           <Typography
@@ -168,13 +146,18 @@ const Navbar = (props) => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={(e) => handleNavMenuClick(e, page)}
+                key={page.name}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                <HashLink to={page.link}>{page.name}</HashLink>
               </Button>
             ))}
+            <Button
+              sx={{ my: 2, color: "white", display: "block" }}
+              onClick={() => window.open(resumeLink, "_blank")}
+            >
+              RESUME
+            </Button>
           </Box>
 
           <Tooltip title="Change Theme">

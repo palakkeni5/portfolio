@@ -1,9 +1,6 @@
-import React, { useState, useEffect, useContext } from "react";
+import React from "react";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -37,7 +34,7 @@ const Education = () => {
         direction="column"
         justifyContent="space-between"
         alignItems="center"
-        marginTop={10}
+        marginTop={5}
       >
         <Grid item sx={{ m: 5 }}>
           <Typography variant="h3" gutterBottom>

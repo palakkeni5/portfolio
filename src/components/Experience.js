@@ -8,12 +8,6 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import Divider from "@mui/material/Divider";
 
 const items = [
   {
@@ -59,7 +53,7 @@ const Experience = () => {
         direction="column"
         justifyContent="space-between"
         alignItems="center"
-        marginTop={10}
+        marginTop={5}
       >
         <Grid item sx={{ m: 5 }}>
           <Typography variant="h3" gutterBottom>

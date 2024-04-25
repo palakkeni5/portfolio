@@ -1,9 +1,7 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import Tooltip from "@mui/material/Tooltip";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
@@ -19,7 +17,7 @@ const Skills = () => {
           direction="column"
           justifyContent="space-between"
           alignItems="center"
-          marginTop={10}
+          marginTop={5}
         >
           <Grid item xs={1} sx={{ mt: 5, ml: 5, mr: 5 }}>
             <Typography variant="body1" gutterBottom textAlign={"center"}>

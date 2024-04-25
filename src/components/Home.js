@@ -1,6 +1,5 @@
 import React, { useState, useEffect, Suspense } from "react";
 import Typewriter from "typewriter-effect";
-import Fade from "react-reveal";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -13,10 +12,10 @@ import Tooltip from "@mui/material/Tooltip";
 const data = {
   name: "Palak Pramod Keni",
   roles: [
-    // "Masters Student",
     "Full Stack Developer",
     "Front End Developer",
     "Back End Developer",
+    "Software Engineer",
     "Full Stack Developer",
   ],
 };
@@ -91,9 +90,6 @@ const Home = () => {
           </Grid>
         </Grid>
       </Box>
-
-      {/*
-       */}
     </>
   );
 };
