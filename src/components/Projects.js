@@ -30,8 +30,8 @@ const Projects = () => {
         alignItems="flex-start"
         sx={{ p: 2 }}
       >
-        {data.projects.map((project) => (
-          <Card sx={{ maxWidth: 370, minWidth: 370, m: 2 }} raised>
+        {data.projects.map((project, key) => (
+          <Card key={key} sx={{ maxWidth: 370, minWidth: 370, m: 2 }} raised>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -46,8 +46,8 @@ const Projects = () => {
                   {project.projectDescription}
                 </Typography>
 
-                {project.projectTech.map((tech) => (
-                  <Chip label={tech} sx={{ m: 1 }} color="primary" />
+                {project.projectTech.map((tech, key) => (
+                  <Chip key={key} label={tech} sx={{ m: 1 }} color="primary" />
                 ))}
               </CardContent>
             </CardActionArea>
@@ -66,6 +66,15 @@ const Projects = () => {
                   onClick={() => window.open(project.liveDemo, "_blank")}
                 >
                   Live Demo
+                </Button>
+              )}
+              {project.playStoreLink && (
+                <Button
+                  size="small"
+                  color="primary"
+                  onClick={() => window.open(project.playStoreLink, "_blank")}
+                >
+                  Google Play Link
                 </Button>
               )}
             </CardActions>

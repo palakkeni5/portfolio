@@ -27,7 +27,7 @@ const resumeLink =
 
 const Navbar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [isDarkMode, setIsDarkMode] = React.useState(false);
+  const [isDarkMode, setIsDarkMode] = React.useState(true);
 
   const toggleDarkMode = () => {
     let newMode = !isDarkMode;
@@ -49,7 +49,7 @@ const Navbar = (props) => {
     try {
       var localMode = window.sessionStorage.getItem("isDarkMode");
       if (localMode == null) {
-        localMode = false;
+        localMode = true;
       }
       if (JSON.parse(localMode)) {
         setIsDarkMode(true);

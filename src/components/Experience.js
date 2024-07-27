@@ -62,8 +62,8 @@ const Experience = () => {
         </Grid>
       </Grid>
       <Timeline position="alternate" sx={{ mb: 10 }}>
-        {items.map((item) => (
-          <TimelineItem>
+        {items.map((item, key) => (
+          <TimelineItem key={key}>
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
               align="right"

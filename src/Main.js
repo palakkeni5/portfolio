@@ -21,7 +21,7 @@ const Main = () => {
   const [reactTheme, setReactTheme] = useState(lightTheme);
 
   const handleThemeSetupCallback = (themeValue) => {
-    console.log("in themeValue" + themeValue);
+    // console.log("in themeValue" + themeValue);
     if (JSON.parse(themeValue)) {
       setReactTheme(darkTheme);
     } else {

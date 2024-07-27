@@ -41,29 +41,28 @@ const Skills = () => {
               direction={{ xs: "column", sm: "row" }}
               spacing={{ xs: 1, sm: 2, md: 4 }}
             >
-              {data.languages.map((language) => (
-                <>
-                  <Grid
-                    container
-                    direction="column"
-                    justifyContent="space-between"
-                    alignItems="center"
+              {data.languages.map((language, key) => (
+                <Grid
+                  key={key}
+                  container
+                  direction="column"
+                  justifyContent="space-between"
+                  alignItems="center"
+                >
+                  <Avatar
+                    alt={language.name}
+                    src={language.logo}
+                    variant="square"
+                    sx={{ width: 56, height: 56 }}
+                  />
+                  <Typography
+                    variant="button"
+                    gutterBottom
+                    textAlign={"center"}
                   >
-                    <Avatar
-                      alt={language.name}
-                      src={language.logo}
-                      variant="square"
-                      sx={{ width: 56, height: 56 }}
-                    />
-                    <Typography
-                      variant="button"
-                      gutterBottom
-                      textAlign={"center"}
-                    >
-                      {language.name}
-                    </Typography>
-                  </Grid>
-                </>
+                    {language.name}
+                  </Typography>
+                </Grid>
               ))}
             </Stack>
           </Grid>
@@ -78,29 +77,28 @@ const Skills = () => {
               direction={{ xs: "column", sm: "row" }}
               spacing={{ xs: 1, sm: 2, md: 4 }}
             >
-              {data.frameworks.map((framework) => (
-                <>
-                  <Grid
-                    container
-                    direction="column"
-                    justifyContent="space-between"
-                    alignItems="center"
+              {data.frameworks.map((framework, key) => (
+                <Grid
+                  key={key}
+                  container
+                  direction="column"
+                  justifyContent="space-between"
+                  alignItems="center"
+                >
+                  <Avatar
+                    alt={framework.name}
+                    src={framework.logo}
+                    variant="square"
+                    sx={{ width: 56, height: 56 }}
+                  />
+                  <Typography
+                    variant="button"
+                    gutterBottom
+                    textAlign={"center"}
                   >
-                    <Avatar
-                      alt={framework.name}
-                      src={framework.logo}
-                      variant="square"
-                      sx={{ width: 56, height: 56 }}
-                    />
-                    <Typography
-                      variant="button"
-                      gutterBottom
-                      textAlign={"center"}
-                    >
-                      {framework.name}
-                    </Typography>
-                  </Grid>
-                </>
+                    {framework.name}
+                  </Typography>
+                </Grid>
               ))}
             </Stack>
           </Grid>
@@ -115,29 +113,28 @@ const Skills = () => {
               direction={{ xs: "column", sm: "row" }}
               spacing={{ xs: 1, sm: 2, md: 4 }}
             >
-              {data.webTechnologies.map((webTechnology) => (
-                <>
-                  <Grid
-                    container
-                    direction="column"
-                    justifyContent="space-between"
-                    alignItems="center"
+              {data.webTechnologies.map((webTechnology, key) => (
+                <Grid
+                  key={key}
+                  container
+                  direction="column"
+                  justifyContent="space-between"
+                  alignItems="center"
+                >
+                  <Avatar
+                    alt={webTechnology.name}
+                    src={webTechnology.logo}
+                    variant="square"
+                    sx={{ width: 56, height: 56 }}
+                  />
+                  <Typography
+                    variant="button"
+                    gutterBottom
+                    textAlign={"center"}
                   >
-                    <Avatar
-                      alt={webTechnology.name}
-                      src={webTechnology.logo}
-                      variant="square"
-                      sx={{ width: 56, height: 56 }}
-                    />
-                    <Typography
-                      variant="button"
-                      gutterBottom
-                      textAlign={"center"}
-                    >
-                      {webTechnology.name}
-                    </Typography>
-                  </Grid>
-                </>
+                    {webTechnology.name}
+                  </Typography>
+                </Grid>
               ))}
             </Stack>
           </Grid>
@@ -152,29 +149,28 @@ const Skills = () => {
               direction={{ xs: "column", sm: "row" }}
               spacing={{ xs: 1, sm: 2, md: 4 }}
             >
-              {data.databaseTechnologies.map((databaseTechnology) => (
-                <>
-                  <Grid
-                    container
-                    direction="column"
-                    justifyContent="space-between"
-                    alignItems="center"
+              {data.databaseTechnologies.map((databaseTechnology, key) => (
+                <Grid
+                  key={key}
+                  container
+                  direction="column"
+                  justifyContent="space-between"
+                  alignItems="center"
+                >
+                  <Avatar
+                    alt={databaseTechnology.name}
+                    src={databaseTechnology.logo}
+                    variant="square"
+                    sx={{ width: 56, height: 56 }}
+                  />
+                  <Typography
+                    variant="button"
+                    gutterBottom
+                    textAlign={"center"}
                   >
-                    <Avatar
-                      alt={databaseTechnology.name}
-                      src={databaseTechnology.logo}
-                      variant="square"
-                      sx={{ width: 56, height: 56 }}
-                    />
-                    <Typography
-                      variant="button"
-                      gutterBottom
-                      textAlign={"center"}
-                    >
-                      {databaseTechnology.name}
-                    </Typography>
-                  </Grid>
-                </>
+                    {databaseTechnology.name}
+                  </Typography>
+                </Grid>
               ))}
             </Stack>
           </Grid>
@@ -189,29 +185,28 @@ const Skills = () => {
               direction={{ xs: "column", sm: "row" }}
               spacing={{ xs: 1, sm: 2, md: 4 }}
             >
-              {data.tools.map((tool) => (
-                <>
-                  <Grid
-                    container
-                    direction="column"
-                    justifyContent="space-between"
-                    alignItems="center"
+              {data.tools.map((tool, key) => (
+                <Grid
+                  key={key}
+                  container
+                  direction="column"
+                  justifyContent="space-between"
+                  alignItems="center"
+                >
+                  <Avatar
+                    alt={tool.name}
+                    src={tool.logo}
+                    variant="square"
+                    sx={{ width: 56, height: 56 }}
+                  />
+                  <Typography
+                    variant="button"
+                    gutterBottom
+                    textAlign={"center"}
                   >
-                    <Avatar
-                      alt={tool.name}
-                      src={tool.logo}
-                      variant="square"
-                      sx={{ width: 56, height: 56 }}
-                    />
-                    <Typography
-                      variant="button"
-                      gutterBottom
-                      textAlign={"center"}
-                    >
-                      {tool.name}
-                    </Typography>
-                  </Grid>
-                </>
+                    {tool.name}
+                  </Typography>
+                </Grid>
               ))}
             </Stack>
           </Grid>
