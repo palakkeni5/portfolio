@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.99f3f978.css",
-    "main.js": "/portfolio/static/js/main.cf593a87.js",
+    "main.js": "/portfolio/static/js/main.574054e4.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/pokedex-app.png": "/portfolio/static/media/pokedex-app.cc4f339bd07e3c20fcc5.png",
     "static/media/awesome-super-store.png": "/portfolio/static/media/awesome-super-store.23b786f4af14535a6919.png",
+    "static/media/wallpaper-app-feature-graphic.png": "/portfolio/static/media/wallpaper-app-feature-graphic.6a96a45682660c29665c.png",
     "static/media/photo-1.jpg": "/portfolio/static/media/photo-1.b6ca1160e798cd4331ad.jpg",
     "static/media/bootstrap.png": "/portfolio/static/media/bootstrap.a4c13c10e026b63748c0.png",
     "static/media/css.png": "/portfolio/static/media/css.19c8605d6b2861f5fbe0.png",
@@ -82,11 +83,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/portfolio/index.html",
     "main.99f3f978.css.map": "/portfolio/static/css/main.99f3f978.css.map",
-    "main.cf593a87.js.map": "/portfolio/static/js/main.cf593a87.js.map",
+    "main.574054e4.js.map": "/portfolio/static/js/main.574054e4.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99f3f978.css",
-    "static/js/main.cf593a87.js"
+    "static/js/main.574054e4.js"
   ]
 }
