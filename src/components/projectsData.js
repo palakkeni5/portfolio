@@ -3,9 +3,26 @@ import pokedexAppImage from "../assets/project-images/pokedex-app.png";
 import portfolioImage from "../assets/project-images/screen-capture-mp4.gif";
 import oneRoomChatAppImage from "../assets/project-images/one-room-chat-app.png";
 import awesomeSuperstoreAppImage from "../assets/project-images/awesome-super-store.png";
+import wallpaperAppImage from "../assets/project-images/wallpaper-app-feature-graphic.png";
 
 export const data = {
   projects: [
+    {
+      projectImage: wallpaperAppImage,
+      projectName: "Wallpaper App",
+      projectDescription:
+        "An app developed in React Native to search, view and set wallpapers for Android and IOS devices.",
+      projectTech: [
+        "React Native",
+        "Kotlin",
+        "Gradle",
+        "Github Actions",
+        "Google Play Store",
+      ],
+      projectLink: "https://github.com/palakkeni5/wallpaper-app",
+      playStoreLink:
+        "https://play.google.com/apps/testing/com.palakkeni5.wallpaper.app",
+    },
     {
       projectImage: oneRoomChatAppImage,
       projectName: "One Room Chat App",
