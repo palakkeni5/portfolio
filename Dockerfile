@@ -8,7 +8,7 @@ COPY . .
 
 RUN npm config set legacy-peer-deps true
 RUN npm install
-RUN npm run build
+# RUN npm run build
 RUN npm install -g serve
 
 EXPOSE 3000

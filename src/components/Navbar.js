@@ -163,6 +163,8 @@ const Navbar = (props) => {
           <Tooltip title="Change Theme">
             <Box sx={{ flexGrow: 0 }}>
               <DarkModeSwitch
+                sunColor="white"
+                moonColor="black"
                 style={{ margin: "1rem" }}
                 checked={!isDarkMode}
                 onChange={toggleDarkMode}
