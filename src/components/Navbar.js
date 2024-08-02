@@ -48,12 +48,13 @@ const Navbar = (props) => {
   React.useEffect(() => {
     try {
       var localMode = window.sessionStorage.getItem("isDarkMode");
-      if (localMode == null) {
-        localMode = true;
-      }
-      if (JSON.parse(localMode)) {
+      if (localMode === null) {
         setIsDarkMode(true);
         props.setThemeCallBack(true);
+      } else {
+        console.log(localMode);
+        setIsDarkMode(localMode === "true");
+        props.setThemeCallBack(localMode);
       }
     } catch (e) {
       console.log(e);
@@ -164,7 +165,7 @@ const Navbar = (props) => {
             <Box sx={{ flexGrow: 0 }}>
               <DarkModeSwitch
                 sunColor="white"
-                moonColor="black"
+                moonColor="white"
                 style={{ margin: "1rem" }}
                 checked={!isDarkMode}
                 onChange={toggleDarkMode}
