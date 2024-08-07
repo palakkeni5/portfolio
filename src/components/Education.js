@@ -8,6 +8,14 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0 },
+};
 
 const items = [
   {
@@ -29,57 +37,76 @@ const items = [
 ];
 
 const Education = () => {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
     <>
-      <Grid
-        container
-        direction="column"
-        justifyContent="space-between"
-        alignItems="center"
-        marginTop={5}
+      <motion.div
+        className="box"
+        ref={ref}
+        variants={boxVariant}
+        initial="hidden"
+        animate={control}
       >
-        <Grid item sx={{ m: 5 }}>
-          <Typography variant="h3" gutterBottom>
-            Education
-          </Typography>
+        <Grid
+          container
+          direction="column"
+          justifyContent="space-between"
+          alignItems="center"
+          marginTop={5}
+        >
+          <Grid item sx={{ m: 5 }}>
+            <Typography variant="h3" gutterBottom>
+              Education
+            </Typography>
+          </Grid>
         </Grid>
-      </Grid>
-      <Timeline position="alternate">
-        {items.map((item, key) => (
-          <TimelineItem key={key}>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              align="right"
-              variant="body2"
-              color="text.secondary"
-            >
-              {item.year}
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                {item.degree}
-              </Typography>
-              <br />
-              <Typography variant="body2" component="span">
-                {item.major}
-              </Typography>
-              <br />
-              <Typography variant="subtitle1" component="span">
-                {item.university}
-              </Typography>
-              <br />
-              <Typography variant="overline" component="span">
-                {item.universityLocation}
-              </Typography>
-              <Typography>{item.gpa}</Typography>
-            </TimelineContent>
-          </TimelineItem>
-        ))}
-      </Timeline>
+        <Timeline position="alternate">
+          {items.map((item, key) => (
+            <TimelineItem key={key}>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+                color="text.secondary"
+              >
+                {item.year}
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineDot />
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography variant="h6" component="span">
+                  {item.degree}
+                </Typography>
+                <br />
+                <Typography variant="body2" component="span">
+                  {item.major}
+                </Typography>
+                <br />
+                <Typography variant="subtitle1" component="span">
+                  {item.university}
+                </Typography>
+                <br />
+                <Typography variant="overline" component="span">
+                  {item.universityLocation}
+                </Typography>
+                <Typography>{item.gpa}</Typography>
+              </TimelineContent>
+            </TimelineItem>
+          ))}
+        </Timeline>
+      </motion.div>
     </>
   );
 };
