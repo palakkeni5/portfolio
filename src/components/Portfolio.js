@@ -5,8 +5,14 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import { Grid } from "@mui/material";
+import { useEffect } from "react";
 
 const Portfolio = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo({ top: 10, behavior: "smooth" });
+    }, 100);
+  }, []);
   return (
     <>
       <Grid
