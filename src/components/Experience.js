@@ -20,14 +20,24 @@ const boxVariant = {
 
 const items = [
   {
+    year: "Sep 2024 – Present",
+    org: "The Research Foundation for SUNY",
+    position: "Programmer Analyst",
+    location: "Albany, New York, USA",
+    work: [
+      "Developed and maintained Oracle EBS and Oracle SOA applications through close collaboration with key stakeholders, streamlining system interactions and operations for 64+ NY State universities",
+      "Refactored existing Oracle EBS alerts, reducing automated emails by 90% and custom code by 75% using Oracle SQL",
+    ],
+  },
+  {
     year: "May 2023 – Aug 2023",
     org: "Juniper Networks, Inc.",
     position: "Software Engineering Intern",
     location: "Bridgewater, New Jersey, USA",
     work: [
-      "Created Proof of Concept for web planner application utilizing pluggable, custom-built microservice Docker containers with Node JS and PostgreSQL, resulting in a 90% reduction in deployment time.",
-      "Implemented CI/CD pipelines, automating docker image builds, resulting in 93% time reduction required by GitLab pipelines.",
-      "Developed react components and authored comprehensive unit tests for 90% coverage, boosting code stability.",
+      "Architected 3 scalable microservices for a Proof of Concept(POC) network planner by analyzing legacy monolithic codebase and containerizing services within Docker images",
+      "Spearheaded implementation of GitLab CI/CD pipelines for microservices repositories with build, unit test, and deploy stages; reducing build time by 93% and automating deployments to Kubernetes cluster",
+      "Authored unit tests, leveraging Jest and React Testing Library for testing modular React components developed using Slipstream UI library to achieve 90% code coverage",
     ],
   },
   {
@@ -36,10 +46,10 @@ const items = [
     position: "Associate Consultant",
     location: "Mumbai, Maharashtra, India",
     work: [
-      "Created new Java Spring-based REST APIs for customer profile and product management for mobile and internet banking applications, increasing customer growth by 14% in FY 2021-22.",
-      "Developed new bulk file uploads in the loans department to automate manual processing of records, reducing the time of transactions by 90%.",
-      "Integrated new processes into the end of day batch using Oracle SQL packages and functions to purge and segregate the historical data, expediting day-to-day banking tasks.",
-      "Automated banking reports and data extracts for locker products for ad-hoc and periodic reporting, gaining new insights into resource utilization within the bank.",
+      "Developed Java Spring REST APIs for a major bank(client), enabling customer profile maintenance and product management, increasing customer growth by 14% year-over-year",
+      "Collaborated across cross-functional teams, utilizing Oracle JET framework to modify existing banking screens within 30 days to facilitate government compliances",
+      "Integrated 20+ new processes into end of day batch to segregate the historical data strategically, expediting day-to-day banking tasks",
+      "Led development of bulk file uploads by utilizing Oracle SQL to enable data processing at scale, reducing transaction time by 90%",
     ],
   },
   {
@@ -48,8 +58,7 @@ const items = [
     position: "Framework Engineer Consultant Intern: Software Developer",
     location: "Mumbai, Maharashtra, India",
     work: [
-      "Reduced cost of an existing project by 70% and improved its overall performance by successfully migrating data from Google Big Query to Google Compute Engine instance of PostgreSQL database.",
-      "Developed REST API in Java Spring and a front-end application in React JS for a car insurance application to  check the user's insurance eligibility.",
+      "Reduced cost by 70% of project by migrating daily data from Google Big Query to PostgreSQL database in a Google Compute Engine instance by using Google Cloud Functions and BASH scripts",
     ],
   },
 ];
